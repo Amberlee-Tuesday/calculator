@@ -1,0 +1,53 @@
+/*Basic Reset*/
+body {
+    margin:0;
+    padding:0;
+
+}
+#cal-frame {
+    width: 300px;
+    height: auto;
+    margin: 50px;
+}
+
+#left-operand{
+    border: 1px solid black;
+    width: 40px;
+    height: 50px;
+    padding: 22px;
+    margin: 10px;
+    float: left;
+}
+#center-operand {
+    border: 1px solid black;
+    width: 20px;
+    height: 50px;
+    padding: 22px;
+    margin: 10px;
+    float: left;
+}
+#right-operand {
+    border: 1px solid black;
+    width: 40px;
+    height: 50px;
+    padding: 22px;
+    margin: 10px;
+    float: left;
+}
+
+.box {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    padding: 12px;
+    margin: 10px;
+    float: left;
+}
+.zero-box {
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+    padding: 12px;
+    margin: 10px;
+    float: left;
+}

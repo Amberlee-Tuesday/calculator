@@ -34,36 +34,49 @@
         })
     }
 
-    // EQUATION FUNCTIONALITY
+    // CLEAR 
 
+    function clearInput (){
+        leftOperand.value = '';
+        centerOperand.value = '';
+        rightOperand.value = '';
+    }
+
+    clear.addEventListener('click', clearInput);
+    
+    // EQUATION FUNCTIONALITY
 
     var multiplication;
     var division;
     var addition;
     var subtraction;
 
-
     function doMath() {
-
-
-        console.log(centerOperand.value);
 
         switch (centerOperand.value) {
             case 'x':
-                leftOperand.value * rightOperand.value;
-                alert ('multiplication');
+                multiplication = leftOperand.value * rightOperand.value;
+                leftOperand.value = multiplication;
+                centerOperand.value = '';
+                rightOperand.value = '';
                 break;
             case '÷':
-                leftOperand.value / rightOperand.value;
-                alert ('division');
+                division = leftOperand.value / rightOperand.value;
+                leftOperand.value = division;
+                centerOperand.value = '';
+                rightOperand.value = '';
                 break;
             case '+':
-                leftOperand.value + rightOperand.value;
-                alert ('addition');
+                addition = +leftOperand.value + +rightOperand.value;
+                leftOperand.value = addition;
+                centerOperand.value = '';
+                rightOperand.value = '';
                 break;
             case '-':
-                leftOperand.value - rightOperand.value;
-                alert ('subtraction');
+                subtraction = leftOperand.value - rightOperand.value;
+                leftOperand.value = subtraction;
+                centerOperand.value = '';
+                rightOperand.value = '';
                 break;
         }
     }

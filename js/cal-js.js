@@ -12,21 +12,25 @@
     var operator = document.getElementsByClassName('operator');
     var equals = document.getElementById('equals');
     var clear = document.getElementById('clear');
+    var decimal = document.getElementById('decimal');
+    var negPos = document.getElementById('negPos');
+    var percentage = document.getElementById('percentage');
 
-    // LEFT INPUT
+
+    ///// LEFT INPUT
 
     for (var i = 0; i < number.length; i++) {
         number[i].addEventListener('click', function () {
             if (centerOperand.value === '') {
                 leftOperand.value += this.innerHTML;
-                console.log()
             } else {
                 rightOperand.value += this.innerHTML;
             }
         })
     }
 
-    // CENTER INPUT
+
+    ///// CENTER INPUT
 
     for (var i = 0; i < operator.length; i++) {
         operator[i].addEventListener('click', function () {
@@ -34,7 +38,8 @@
         })
     }
 
-    // CLEAR 
+
+    ///// CLEAR
 
     function clearInput (){
         leftOperand.value = '';
@@ -43,8 +48,61 @@
     }
 
     clear.addEventListener('click', clearInput);
-    
-    // EQUATION FUNCTIONALITY
+
+
+    ///// DECIMAL
+
+    var decimalPoint;
+
+    function addDecimal (){
+        decimalPoint = '.';
+        if (centerOperand.value === ''){
+        leftOperand.value += decimalPoint;
+        } else {
+            rightOperand.value += decimalPoint;
+        }
+    }
+
+    decimal.addEventListener('click', addDecimal);
+
+
+    ///// NEGATIVE/POSITIVE
+
+    var negativeL;
+    var negativeR;
+
+    function makeNegative(value) {
+        negativeL = leftOperand.value * -1;
+        negativeR = rightOperand.value * -1;
+        if (centerOperand.value === '') {
+            leftOperand.value = negativeL;
+        } else {
+            rightOperand.value = negativeR;
+        }
+    }
+
+    negPos.addEventListener('click', makeNegative);
+
+
+    ///// PERCENTAGE
+
+    var percentSignL;
+    var percentSignR;
+
+    function makePercent() {
+        percentSignL = leftOperand.value * .100;
+        percentSignR = rightOperand.value * .100;
+        if (centerOperand.value === '') {
+            leftOperand.value = percentSignL
+        } else {
+            rightOperand.value = percentSignR
+        }
+    }
+
+    percentage.addEventListener('click', makePercent);
+
+
+    ///// EQUATION FUNCTIONALITY
 
     var multiplication;
     var division;
@@ -82,7 +140,5 @@
     }
 
     equals.addEventListener('click', doMath);
-
-
 
 })();

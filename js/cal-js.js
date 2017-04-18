@@ -141,4 +141,17 @@
 
     equals.addEventListener('click', doMath);
 
+
+    ///// MAKING KEYPAD WORK
+
+    number[i].addEventListener('keydown', function(event) {
+        if(event.key49) {
+            if (centerOperand.value === '') {
+                leftOperand.value += 1;
+            } else {
+                rightOperand.value += 1;
+            }
+        }
+    });
+
 })();

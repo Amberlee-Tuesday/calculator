@@ -8,6 +8,9 @@ body {
 
 /*Base Style*/
 
+#cal-frame{
+    width: 80%;
+}
 h1 {
     text-align: center;
     width: 100%;
@@ -16,18 +19,26 @@ h1 {
     font-size: 3em;
     font-weight: bold;
 }
+.top-input{
+    background-color: darkgrey;
+    color: black;
+    font-weight: bold;
+}
 #left-operand{
-    height: 50px;
+    height: 80px;
 
 }
 #center-operand {
-    height: 50px;
+    height: 80px;
 
 }
 #right-operand {
-    height: 50px;
+    height: 80px;
 
 }
 button {
-    height: 50px;
+    height: 80px;
+}
+#negPos, #decimal, #percentage {
+    background-color: lightgray;
 }

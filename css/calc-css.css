@@ -4,50 +4,25 @@ body {
     padding:0;
 
 }
-#cal-frame {
-    width: 300px;
-    height: auto;
-    margin: 50px;
+h1 {
+    text-align: center;
+    width: 100%;
+    font-family: "Adobe Garamond Pro";
+    font-size: 3em;
+    font-weight: bold;
 }
-
 #left-operand{
-    border: 1px solid black;
-    width: 40px;
     height: 50px;
-    padding: 22px;
-    margin: 10px;
-    float: left;
+
 }
 #center-operand {
-    border: 1px solid black;
-    width: 20px;
     height: 50px;
-    padding: 22px;
-    margin: 10px;
-    float: left;
+
 }
 #right-operand {
-    border: 1px solid black;
-    width: 40px;
     height: 50px;
-    padding: 22px;
-    margin: 10px;
-    float: left;
-}
 
-.box {
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    padding: 12px;
-    margin: 10px;
-    float: left;
 }
-.zero-box {
-    border: 1px solid black;
+button {
     height: 50px;
-    width: 100px;
-    padding: 12px;
-    margin: 10px;
-    float: left;
 }

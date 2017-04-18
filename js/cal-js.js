@@ -36,11 +36,31 @@
 
     // EQUATION FUNCTIONALITY (switch?)
 
-    function doMath() {
-        rightOperand.value ==
+    var multiplication = '*';
+    var division = '/';
+    var addition = '+';
+    var subtraction = '-';
+
+    switch(doMath){
+        case multiplication:
+            leftOperand.value * rightOperand.value;
+
+            break;
+        case division:
+            leftOperand.value / rightOperand.value;
+
+            break;
+        case addition:
+            leftOperand.value + rightOperand.value;
+
+            break;
+        case subtraction:
+            leftOperand.value - rightOperand.value;
+
+            break;
     }
 
-    equals.addEventListener('click', doMath)
+    equals.addEventListener('click', doMath);
 
 
 

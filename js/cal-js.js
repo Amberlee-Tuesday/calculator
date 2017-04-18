@@ -37,33 +37,38 @@
     // EQUATION FUNCTIONALITY
 
 
-    var multiplication =
+    var multiplication;
     var division;
     var addition;
     var subtraction;
 
-    /*var doMath = ;
-    switch (doMath) {
-        case multiplication:
-            leftOperand.value * rightOperand.value;
-            break;
-        case division:
-            leftOperand.value / rightOperand.value;
-            break;
-        case addition:
-            leftOperand.value + rightOperand.value;
-            break;
-        case subtraction:
-            leftOperand.value - rightOperand.value;
-            break;
-    }
-    */
 
-    equals.addEventListener('click', function () {
-        if (centerOperand == *){
-            console.log(leftOperand.value *= rightOperand.value += this.innerHTML);
+    function doMath() {
+
+
+        console.log(centerOperand.value);
+
+        switch (centerOperand.value) {
+            case 'x':
+                leftOperand.value * rightOperand.value;
+                alert ('multiplication');
+                break;
+            case '÷':
+                leftOperand.value / rightOperand.value;
+                alert ('division');
+                break;
+            case '+':
+                leftOperand.value + rightOperand.value;
+                alert ('addition');
+                break;
+            case '-':
+                leftOperand.value - rightOperand.value;
+                alert ('subtraction');
+                break;
         }
-    })
+    }
+
+    equals.addEventListener('click', doMath);
 
 
 

@@ -11,7 +11,7 @@
     var number = document.getElementsByClassName('number');
     var operator = document.getElementsByClassName('operator');
     var equals = document.getElementById('equals');
-
+    var clear = document.getElementById('clear');
 
     // LEFT INPUT
 
@@ -34,39 +34,36 @@
         })
     }
 
-    // EQUATION FUNCTIONALITY (switch?)
+    // EQUATION FUNCTIONALITY
 
-    var multiplication = '*';
-    var division = '/';
-    var addition = '+';
-    var subtraction = '-';
 
-    switch(doMath){
+    var multiplication =
+    var division;
+    var addition;
+    var subtraction;
+
+    /*var doMath = ;
+    switch (doMath) {
         case multiplication:
             leftOperand.value * rightOperand.value;
-
             break;
         case division:
             leftOperand.value / rightOperand.value;
-
             break;
         case addition:
             leftOperand.value + rightOperand.value;
-
             break;
         case subtraction:
             leftOperand.value - rightOperand.value;
-
             break;
     }
+    */
 
-    equals.addEventListener('click', doMath);
-
-
-
-
-
-
+    equals.addEventListener('click', function () {
+        if (centerOperand == *){
+            console.log(leftOperand.value *= rightOperand.value += this.innerHTML);
+        }
+    })
 
 
 

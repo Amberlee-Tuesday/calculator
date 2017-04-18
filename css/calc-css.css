@@ -1,21 +1,27 @@
 /*Basic Reset*/
 
+
+
+
 body {
     margin:0;
     padding:0;
+    background-color: darkseagreen;
 }
 
-
+.container{
+    width:40%;
+}
 
 /*Base Css*/
 
 h1 {
     text-align: center;
     width: 100%;
-    font-family: Futura;
+    font-family: "American Typewriter";
     text-transform: uppercase;
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 1.5em;
+    font-weight: normal;
 }
 #left-operand{
     height: 50px;
@@ -32,3 +38,4 @@ h1 {
 button {
     height: 50px;
 }
+

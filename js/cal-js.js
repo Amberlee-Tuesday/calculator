@@ -115,35 +115,29 @@
             case 'x':
                 multiplication = leftOperand.value * rightOperand.value;
                 leftOperand.value = multiplication;
-                centerOperand.value = '';
-                rightOperand.value = '';
                 break;
             case '÷':
                 division = leftOperand.value / rightOperand.value;
                 leftOperand.value = division;
-                centerOperand.value = '';
-                rightOperand.value = '';
                 break;
             case '+':
                 addition = +leftOperand.value + +rightOperand.value;
                 leftOperand.value = addition;
-                centerOperand.value = '';
-                rightOperand.value = '';
                 break;
             case '-':
                 subtraction = leftOperand.value - rightOperand.value;
                 leftOperand.value = subtraction;
-                centerOperand.value = '';
-                rightOperand.value = '';
                 break;
         }
+        centerOperand.value = '';
+        rightOperand.value = '';
     }
 
     equals.addEventListener('click', doMath);
 
 
     ///// MAKING KEYPAD WORK
-
+/*
     number[i].addEventListener('keydown', function(event) {
         if(event.key49) {
             if (centerOperand.value === '') {
@@ -154,4 +148,12 @@
         }
     });
 
+
+    //snippet(use?):
+    addEventListener("keypress", function(event) {
+        console.log(String.fromCharCode(event.charCode));
+    });
+
+
+ */
 })();

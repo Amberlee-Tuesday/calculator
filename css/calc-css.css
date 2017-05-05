@@ -23,18 +23,16 @@ h1 {
     background-color: darkgrey;
     color: black;
     font-weight: bold;
+    font-size: 2em;
 }
 #left-operand{
     height: 80px;
-
 }
 #center-operand {
     height: 80px;
-
 }
 #right-operand {
     height: 80px;
-
 }
 button {
     height: 80px;
@@ -42,3 +40,10 @@ button {
 #negPos, #decimal, #percentage {
     background-color: lightgray;
 }
+.number, #decimal, #percentage, #negPos, #clear {
+    font-size: 2em;
+}
+.operator, #equals {
+    font-size: 3em;
+}
+
